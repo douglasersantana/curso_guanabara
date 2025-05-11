@@ -1,2 +1,586 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
+#dia=input("qual dia?")
+#mes =input("qual mes?")
+#ano=input("qual ano?")
+#print(dia,mes,ano)
+
+#num1=int(input(print("num 1:")))
+#num2=int(input(print("num2:")))
+#soma=num1+num2
+#soma = print(f"A soma entre{num1}e{num2} eh:{soma}")
+
+#algo = input(print("Digite algo"))
+#print(algo.isnumeric())
+
+#soma = 6*2
+#soma1 = 5*4
+#print("soma eh {:=^20}!".format(soma))
+#print(f'multiplicacao eh{soma1}')
+
+
+#desafio 005 -faca um programa que leia um numero inteiro e mostre na tela o seu sucessor e seu antecessor.
+#num = int(input("digite um numero:"))
+#numant=num-1
+#numprox=num+1
+#print(f"Seu antecessor eh {numant} e sucessor{numprox}")
+
+#desafio 006 -crie um algoritmo que leia um numero e mostre o seu dobro,triplo e raiz quadrada.
+#num=float(input("Digite um numero:"))
+#dobro = num**2
+#triplo=num**3
+#raiz=num**0.5
+#print(f"o dobro eh{dobro}o triplo{triplo} e raiz {raiz}")
+
+#desafio 007 - desenvolva um programa que leia as duas notas de um aluno ,calcule e mostre sua media.
+#nota1=float(input("Digite a nota 1:"))
+#nota2=float(input("Digite a nota 2:"))
+#media =(nota1+nota2)/2
+#print(f"a media eh  {media}")            
+
+
+#desafio 008 -escreva um programa que leia um valor em metros e o exiba convertido em centimetros e milimetros.
+#metros=float(input("Digite o valor em metros:"))
+#centi=metros*100
+#milim=metros*1000
+#print(f"valor de {metros} em centimetros eh:{centi}cm e em milimetros{milim}mm")
+
+
+#desafio 009 -faca um programa que leia um numero inteiro qualquer e mostre na tela sua tabuada.
+#num=int(input(print("digite um numero")))
+#for i in range(0,11):
+   # multi=num*i
+   # print(f"{num}*{i}={multi}")
+
+
+#desafio 010 -crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dolares ela pode comprar ,dolar =4,90
+#saldo=float(input(print("quanto de saldo voce tem na carteira?")))
+#dolar=saldo*4.90
+#print(f"O slado :{saldo}em dolar fica :{dolar}")
+
+#desafio 011-faca um programa que leia a largura e a altura de uma parede em metros,calcule a sua area e a quantidade de tinta necessaria para pinta-la,sabendo que cada litro de tinta pinta uma area de 2m quadrados.
+#altura=float(input(print("Digite a altura da parede:")))
+#largura=float(input(print("Digite a largura da parede:")))
+#area=altura*largura
+#tinta=area/2
+#print(f"Com a area de :{area}m2 eh necessario {tinta}l de tinta")
+
+
+#desafio 012-faca um algoritmo que leia o preco de um produto e mostre seu novo preco com 5% de desconto.
+#preco=float(input(print("Digite o preco:")))
+#novopreco=preco*0.95
+#print(novopreco)
+
+#desafio 013-faca um algoritmo que leia salario de um funcionario e mostre seu novo salario com 15% de aumento.
+#salario=float(input(print("Digite o salario:")))
+#desconto=salario*1.15
+#print(f"Aumento eh{desconto}")
+
+#desafio 014-converta celsius para fahrenheit
+#celsius=float(input(print("Digite a temperatura em celsius:")))
+#fahre=1.8*celsius+32
+#print(fahre)
+import math
+
+#desafio 015 - programa q pergunte a qt de km rodado e quantidade de dias ,calcule o preco a se pagar sabendo q o dia custa 60 e 0.15 por km rodado
+#dias=int(input(print("Quantos dias o carro foi alugado?")))
+#km=float(input(print("Quantos km o carro rodou?")))
+#total=dias*60+km*0.15
+#print(f"valor total a pagar eh{total}R$")
+
+
+#desafio  016-crie um programa que leia um numero real  qaulquer e mostre na tela a sua porcao inteira
+#num=float(input(print("Digite um valor:")))
+#result = math.trunc(num)
+#print(result)
+
+
+#desafio  017-faca um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo,calcule e mostre o comprimento da hipostenusa
+#cateto1=float(input(print("Digite o cateto 1:")))
+#cateto2=float(input(print("Digite o cateto 2:")))
+#hipo=math.pow(cateto1,2)+math.pow(cateto2,2)
+#newhipo=math.sqrt(hipo)
+#print(f"hipotenusa eh{newhipo}")
+
+#desafio 018 - faca um programa que leia um angulo qualquer e mostre na tela o valor do seno,cosseno e tangente desse angulo.
+#angulo=int(input(print("Digite o angulo:")))
+#rad = math.radians(angulo)
+#seno = math.sin(rad)
+#cosseno = math.cos(rad)
+#tangente = math.tan(rad)
+#print(f"Angulo eh {angulo} seu seno eh{seno},seu cosseno{cosseno} e sua tangente{tangente}")
+
+#desafio 019-Um professor quer sortear um dos seus quatro alunos para apagar o quadro,faca um pograma que ajude ele,lendo o nome deles e escrevendo o nome do escolhido
+import random
+
+#a1=input(print("Digite o nome do aluno 1"))
+#a2=input(print("Digite o nome do aluno 2"))
+#a3=input(print("Digite o nome do aluno 3"))
+#a4=input(print("Digite o nome do aluno 4"))
+#lista=[a1,a2,a3,a4]
+#sorteio=random.choice(lista)#
+#print(f"O aluno sorteado foi :{sorteio}")
+
+#desafio 020-programa q sortei o nome de 4 alunos e mostre a ordem sorteada.
+
+#a1=input(print("Digite o nome do aluno 1"))
+#a2=input(print("Digite o nome do aluno 2"))
+#a3=input(print("Digite o nome do aluno 3"))
+#a4=input(print("Digite o nome do aluno 4"))
+#lista=[a1,a2,a3,a4]
+#random.shuffle(lista)#
+#print(lista)
+
+
+
+###faca um programa que abra e reproduza um audio de arquivo mp3
+
+
+######################  MANIPULAÇÃO DE STRING
+
+
+
+
+
+#frase = 'curso em video'
+#frase=frase.split()
+#print(frase[2][3])
+
+#desafio22 - Crie um programa que leia o nome completo e mostre:-nome com todos as letras maisculas. - nome com todas minusculas. -quantas letras ao tem ao todo sem considerar espaco . -quantas letras tem o primeiro nome.
+#nome = 'Douglas Eduardo Rocha Santana'
+#newnome=nome.upper()
+#print(newnome)
+#minuscula=nome.lower()
+#print(minuscula)
+#counte=nome.count(" ")
+#newcounte=len(nome)-counte
+#print(newcounte)
+#primer=nome.split()
+#newprime=primer[0]
+#contador=len(newprime)
+#print(contador)
+
+
+
+
+
+#desafio023-faca um programa que leia um numero de 0 a 9999 e mostre na tela cada um dos seus digitos separados
+#dig=int(input(print('Digite o numero')))
+#u = dig  // 1 % 10
+#d = dig // 10 % 10
+#c = dig // 100 % 10
+#m = dig // 1000 % 10
+#print("Analisando o numero{}".format(dig))
+#print('Unidade: {}'.format(u))
+#print('Dezena:{}'.format(d))
+#print('Centena:{}'.format(c))
+#print('Milhar:{}'.format(m))
+
+
+
+#desafio024-Crie um programa que leia o nome de uma cidade e diga se ela comeca ou nao com nome "Santo" 
+#cidade=input(print('nome da cidade:')).strip()
+#print(cidade[:5].upper()=='SANTO')      booleano
+
+
+
+#desafio025 -Crie um programa que leia o nome de uma pessoa  e veja se tela tem "Silva"
+#substring="Silva"
+#nome=input(print('Digite o nome:')).strip()
+#print('Sou nome tem Silva?{}'.format(nome[:5]=='Silva'))
+#print("Seu nome tem Silva".format(substring in nome.lower()))
+
+
+#desafio026 - Faca um programa que leia uma frase pelo teclado e mostre .-quantas vezes aparece a letra "A".-Em que posicao ela aparece a primeira vez  .-Em que posicao ela aparece a ultima vez.
+#frase=str(input(print('Digite algo'))).upper().strip()
+#frasenova=frase.count('A')
+#print(frasenova)
+#newfrase=(frase.find('A')+1)
+#print(newfrase)
+#print('A ultima letra A aparece na posicao {}'.format(frase.rfind('A')+1))
+
+
+#desafio027-faca um programa que leia o nome completo de uma pessoa,mostrando em seguida o primeiro e o ultimo nome separadamente.
+#nome=input(print("digite o nome:")).strip()
+#indice=len(nome)-1
+#newnome=nome.split()
+#x=len(newnome)
+#ultimo=nome[indice]
+#print(newnome[0])
+#print(newnome[x-1])
+
+from random import randint
+from time import sleep
+#desafio 028-Escreva um programa que faça o computador "pensar"em um numero inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador .O programa deverá escrever na tela se o usuário venceu ou perdeu.
+
+#escolhido=randint(0,5)
+#num=input('Digite um numero entre 0 e 5:')
+#sleep(1)
+#if escolhido == num:
+#   print("Voce venceu!!!")
+#else:
+#    print(f"Voce perdeu,numero era {escolhido}.")
+    
+
+
+#desafio  029-um programa que leia a velocidade de um carro.Se ele ultrapassar 80km/h.Mostre uma mensagem dizendo que ele foi multado.A multa vai custar 7,00 reais por cada km acima do limite.
+#velocidade=int(input(print('velocidade:')))
+#if velocidade>80:
+#    valor=( velocidade -80)*7.00
+#    print(f'a multa ira custar {valor}')
+
+
+
+
+
+#desafio 030-Crie um programa que leia um número inteiro e mostre na tela se ele é par ou ímpar
+#num=int(input(print('Digite um numero:')))
+#if num % 2!=0 :
+#    print('Eh um numero impar')
+#else:
+#    print('Eh par')
+
+
+
+
+
+#desafio 031-Desenvolva um programa que pergunte a distância de uma viagem em km.Calcule o preço da passagem,cobrando 0,50 por km para viagens de até 200km e 0,45 para viagens mais longas.
+#distancia=float(input(print('Digite a distancia:')))
+#if distancia<=200:
+#   preco=distancia*0.50
+#   print(preco)
+#else:
+#   preco=distancia*0.45
+#  print(preco)
+
+
+#desafio  032-faça um programa que leia um ano qualquer e mostre se ele é bissexto
+#ano=int(input(print('Digite ano:')))
+#if ano % 4==0 and ano % 100!=0 or ano % 400==0:
+#    print(' eh ano bissexto')
+#else:
+#    print('Nao eh ano bissexto')
+
+
+#desafio 033-programa que leia três numeros e mostre qual é o maior e qual é o menor.
+#a = int(input('Primeiro valor:'))
+#b = int(input('Segundo valor:'))
+#c = int(input('Terceiro valor:'))
+
+#menor = a
+#if b < a and b < c:
+#    menor = b
+#if c < a and c < b:
+#    menor = c
+
+#maior = a
+#if b > a and b > c:
+#    maior = b
+#if c > a and c > b:
+#    maior = c
+
+#print(f'Maior foi {maior}')
+#print(f'O menor foi {menor}')
+        
+
+#desafio 034-Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.Para salários superiores a 1.250,00 calcule aumento de 10%  para inferiores ou iguais aumento de 15%
+#salario = float(input('Qual o salario?'))
+
+#if salario > 1250.00:
+#    novo_salario = salario * 1.10
+#    print(novo_salario)
+#else:
+#    novo_salario = salario * 1.15
+#    print(round(novo_salario, 2))
+
+
+#desafio  035-Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou n formar um triângulo.
+#a=float(input('valor de a:'))
+#b=float(input('valor de b:'))
+#c=float(input('valor de c:'))
+#if a<b+c and b<a+c and c<a+b:
+#    print('Pode ser um triângulo')
+#else:
+#    print('Não pode ser triângulo')
+
+#desafio 036 -Escreva um programa para aprovar o emprestimo bancario para a compra de uma casa.O programa vai perguntar o valor da casa ,o salario  do comprador e em quantos anos ele vai  pagar.Calcule o valor da prestação mensal ,sabendo que ela nao pode exceder 30% do salario ou entao o emprestimo sera negado
+#casa=int(input('Qual o valor da casa ?'))
+#salario=float(input('Qual o salario ?'))
+#tempo=int(input('Quanto tempo ira pagar a casa ?'))
+#prest= casa // (tempo*12)
+#if salario * 3//10 >=prest:
+#    print(f'o valor da prestação sera :{prest}')
+#else:
+#    print('Emprestimo negado')
+
+
+
+#desafio 037 -Escreva um programa que leia um numero inteiro qualquer e peça para o usuário escolher qual será a base de conversão:1-para binário,2-para octal,3- para hexadecimal
+#numero=int(input('Digite um numero inteiro:'))
+#print('1 para binario,2 para octal e 3 para hexadecimal')
+#opcao=int(input('escolha entre 1,2 e 3:'))
+#if opcao == 1:
+#    print(f'convertido para binario é igual a {bin(numero)}')
+#elif opcao == 2:
+#    print(f'Convertido para octal é igual a {oct(numero)} ')
+#elif opcao == 3:
+#    print(f'Convertido para hexadecimal é igual a {hex(numero)}' )
+#else:
+#    print('Opção invalida')
+
+#desafio 038- Escreva um programa que leia dois numeros inteiros e compare-osmostrando na tela uma mensagem: -o primeiro valor é maior, - o segundo valor é maior , - Nao existe valor maior,os dois sao iguais
+#num1=int(input('Digite o primeiro numero:'))
+#num2=int(input('Digite o segundo numero:'))
+#if num1 > num2 :
+#    print('o primeiro numero é maior')
+#elif num1 < num2:
+#    print('o segundo numero é maior')
+#else:
+#    print('ambos são iguais')
+
+
+#desafio 039- Faça um programa que leia o ano de nascimento de um jovem e informe ,de acordo com sua idade: -Se ele ainda vai se alistar ao serviço militar  -Se é a hora de se alistar  - Se já passou do tempo do alistamento .Seu programa também devera mostrar o tempo que falta ou que passou do prazo
+#from datetime import date
+#atual = date.today().year
+#nasc=int(input('qual o seu ano de nascimento?'))
+#idade=(atual - nasc)
+#if idade < 18:
+#    falta= 18 - idade
+#   print(f'voce ainda ira se alistar,faltam {falta} anos para o alistamento que sera em {atual+falta}')
+#elif idade == 18:
+#    print('Momento exato para se alistar aos 18 em 2024')
+#elif idade > 18:
+#   falta = idade - 18
+#   print(f'Ja passou {falta} anos para se alistar ,q era em {atual-falta} ')
+#else:
+#   print('Erro!!!')
+
+
+#desafio 040- Crie um programa que leia duas notas de um aluno e calcule sua media ,mostrando uam mensagem no final ,de acordo com a média atingida : - Média abaixo de 5.0:reprovado ,-Media entre 5.0 e 6.9:recuperação ,-Media 7.0 ou superior:aprovado
+#nota1=float(input('digite a nota 1:'))
+#nota2=float(input('digite a nota 2:'))
+#media=(nota1+nota2)//2
+#if media<5.0:
+#    print('Reprovada')
+#elif 5.0 <= media <6.9:
+#    print('Recuperação')
+#elif media >= 7.0:
+#    print('Aprovado')
+#else:
+#    print('Erro!!!')
+   
+
+#desafio 041- A confederação Nacional de natação precisa de uma programa que leia o ano de nascimento de um atleta e mostre sua categoria ,de acordo com a idade: -até 9 anos:mirim . -até 14 anos:infantil . -até 19 anos:junior . -até 20 anos:Senior  . -Acima:master 
+#idade=int(input('Digite sua idade:'))
+#if idade<= 9:
+#    print('Mirim')
+#elif idade <= 14:
+#    print('infantil')
+#elif idade <= 19:
+#    print('Junior')
+#elif idade == 20:
+#    print('Senior')
+#else:
+#    print('Master')
+
+
+#desafio 042- Refaça o desafio 035 adicionando que tipo de triangulo sera formado,se é equilatero,isoceles ou escaleno
+#a=float(input('valor de a:'))
+#b=float(input('valor de b:'))
+#c=float(input('valor de c:'))
+#if a<b+c and b<a+c and c<a+b:
+#    print('Pode ser um triângulo')
+#else:
+#    print('Não pode ser triângulo')
+#  if a==b==c:
+#     print('Triângulo equilatero')
+#  elif a==b or b==c or c==a:
+#     print('Triangulo isóceles ')
+#  else:
+#     print('Triângulo escaleno')
+
+
+#desafio 043-Desenvolva uma lógica  que leia o peso e altura de uma pessoa e calcule seu imc e mostre os status
+#altura=float(input('Digite sua altura:'))
+#peso=float(input('Digite seu peso:'))
+#imc=peso/(altura**2)
+#print(f'imc é {imc:.2f} ')
+#if imc < 18.5:
+#    print('magreza')
+#elif 18.5< imc <24.9:
+#    print('normal')
+#elif 25< imc <29.9:
+#    print('sobrepeso')
+#else:
+#    print('Erro!!!')
+
+
+#desafio 044-Elabore um programa que calcule o valor a ser pago por um produto ,se considerando o seu preço normal e condição de pagamento:  -à vista dinheiro/cheque:10% de desconto.-à vista cartão 5% de desconto -em até 2x no cartão :preço normal . 3x ou mais no cartão:20%de juros
+#valor=float(input('Qual o valor:'))
+#print('Digite 1 para dinheiro ou cheque, 2 para cartão,3 para 2x no cartão e 4 para 3x ou mais no cartão')
+#pagamento=str(input('Qual metodo de pagamento?'))
+#if pagamento=='1':
+#    novovalor=valor*0.90
+#    print(f'valor fica {novovalor}')
+#elif pagamento == '2':
+#   novovalor =valor*0.95
+#    print(f'valor fica {novovalor}')
+#elif pagamento == '3':
+#    novovalor = valor
+#    print(f'valor fica {novovalor}')
+#else:
+#   parcela=int(input('Qual o numero de parcelas?'))
+#    novovalor = valor*1.20
+#    totalparcelas=novovalor/parcela
+#    print(f'valor fica {novovalor} e parcelado {totalparcelas}')
+
+
+# desafio 045- Faça com que o computador jogue jokenpo com vc
+#import random
+#opcao=str(input('Escolha entre pedra,papel ou tesoura :'))
+#alterna=['pedra','papel','tesoura']
+#novo=random.choice(alterna)
+#print(novo)
+#if novo == 'pedra' and opcao == 'tesoura' or novo == 'papel' and opcao =='pedra' or novo == 'tesoura' and opcao == 'papel':
+#    print('Voce perdeu')
+#elif novo == 'papel' and opcao == 'papel' or novo == 'pedra' and opcao == 'pedra' or novo =='tesoura' and opcao == 'tesoura':
+#    print("empate")
+#else:
+#    print('Voce ganhou')
+
+
+#046 -Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício ,indo de 10 até 0,com uma pausa de 1 segundo entre eles
+#import time
+#for c in range(10,-1,-1):
+#    time.sleep(1)
+#    print (c)
+
+#047 -Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50
+#for c in range(1,51):
+#    if c%2 == 0:
+#        print(c)
+
+#048 -Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontra, no intervalo de 1 até 500
+#for c in range(1,501):
+#    if c%1==0 and c%c==0 and c%3==0:
+#        print(c)
+#049 -Refaça o desafio 009 ,mostrando a tabuada de um número que o usuario escolher ,só que agora utilizando um laço for.
+#num=int(input('Digite um numero:'))
+#for c in range(0,11):
+#    result=num*c
+#    print(f'{num}*{c}={result}')
+    
+
+#050 -Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares .Se o valor digitado for impar desconsidere-o.
+#soma=0
+#for c in range(0,6):
+#    num=int(input('digite um numero:'))
+#    if num%2==0:
+#        soma=soma+num
+#print(soma) 
+
+#051 -Desenvolva um programa que leia o primeiro termo e a razão de uma Pa.No final,mostre os 10 primeiros termos dessa progressão.
+#prime=int(input('Digite o primeiro termo:'))
+#razao=int(input('Digite a razão:'))
+#final=prime + (10-1)*razao
+#for c in range(prime,final+razao,razao):
+#    print(c)
+
+#052 -Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
+#num=int(input('Digite um numero'))
+#for c in range(1,num+1):
+#        if num % c== 0 :
+#            print(f' {c}sim')
+#        else:
+#            print(f' {c}não')
+
+#053 -Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo,desconsiderando os espaços.
+#frase=str(input('Digite uma frase:')).strip().upper()
+#word=frase.split()
+#junta=''.join(word)
+#tam=len(junta)
+#inverso=''
+#for c in range(tam-1,-1,-1):
+#   inverso=inverso+junta[c]
+
+#if inverso == junta:
+#   print('É um palindromo')
+
+
+    
+
+
+#054 -Crie um programa que leia o ano de nascimento de sete pessoas .No final,mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores
+#from datetime import date
+#atual = date.today().year
+#total=0
+#menor=0
+#for c in range(0,7):
+#   nasc=int(input('qual o ano de nascimento?'))
+#   idade=(atual-nasc)
+#   if idade >= 18:
+#      total=total+1
+#   elif idade < 18:
+#      menor=menor+1
+#else:
+#   print('Erro')
+
+#print(f'total de maior foi {total}')
+#print(f'total de menor foi{menor}')
+
+
+  
+ 
+
+
+    
+#055 -Faça um programa que leia o peso de 5 pessoas .No final,mostre qual foi o maior e o menor peso lidos.
+
+#for c in range(0,5):
+#   peso=float(input('Qual o seu peso?'))
+#   if c==0:
+#      pesomaior=peso
+#      pesomenor=peso
+#   elif peso>pesomaior:
+#      pesomaior=peso
+#   elif peso<pesomenor:
+#      pesomenor=peso
+
+#print(f'peso maior foi {pesomaior}')
+#print(f'peso menor foi {pesomenor}')
+
+
+# 056 -Desenvolva um programa que leia o nome,idade e sexo de 4 pessoas .No final do programa ,mostre:1-A média de idade do grupo ,2-qual é o nome do homem mais velho,3-quantas mulheres tem menos de 20 anos
+#idadetot=0
+#qt=0
+#nomevelho=''
+
+#for c in range(0,4):
+#   nome=str(input('Qual o nome? '))
+#   idade=int(input('Qual a idade? '))
+#   sexo=str(input('Qual o sexo? '))
+#   idadetot=(idadetot+idade)
+#   idadefinal=idadetot/4
+
+#   if c==0 and sexo in 'Mm':
+#    idademaior=idade
+#    nomevelho=nome
+  
+#   if sexo in 'Mm' and idade > idademaior:
+#    idademaior=idade
+#    nomevelho=nome
+     
+   
+#   if sexo in'Ff' and idade < 20:
+#     qt=qt+1
+     
+   
+
+
+#print(f'A média de idade é:{idadefinal}')
+#print(f'o nome do homem mais velho é :{nomevelho} sua idade :{idademaior}')
+#print(f'A quantidade de mulheres com menos de 20 anos é :{qt}')
+
+# 057 -Faça um programa que leia o sexo de uma pessoa ,mas só aceite os valores 'M'ou 'F'.Caso esteja errado,peça a digitação novamente até ter uma valor correto.
+#sexo = str(input('Informe seu sexo: [M/F]')).strip().upper()
+#while sexo not in'MmFf':
+#    sexo = 
